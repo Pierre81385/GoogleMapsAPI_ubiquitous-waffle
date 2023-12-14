@@ -5,7 +5,7 @@ const { response } = require("express");
 
 dotenv.config();
 
-router.route("/route").get(async (req, res) => {
+router.route("/route").post(async (req, res) => {
   //var params = req.body;
   params = {
     destination: "Toronto", // (can be address, coordinates, plus codes) REQUIRED',

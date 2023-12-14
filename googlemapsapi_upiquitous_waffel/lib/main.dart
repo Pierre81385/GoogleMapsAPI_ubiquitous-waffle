@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:googlemapsapi_upiquitous_waffel/components/directions.dart';
 import 'package:googlemapsapi_upiquitous_waffel/components/googlemap_component.dart';
 
 void main() {
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: GoogleMapComponent(),
+      home: Scaffold(body: SafeArea(child: DirectionsComponent())),
     );
   }
 }
